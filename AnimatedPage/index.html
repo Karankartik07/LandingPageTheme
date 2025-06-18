@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Header</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    onload="document.body.classList.add('loaded'); document.querySelector('.header').classList.add('animate')"
+  >
+    <div class="">
+      <header id="header" class="header d-flex align-items-center fixed-top">
+        <div
+          class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+        >
+          <a
+            href="index.html"
+            class="logo d-flex align-items-center me-auto me-xl-0"
+          >
+            <img src="image/ES LOGO PNG[1].png" alt="Logo" />
+          </a>
+
+          <nav id="navmenu" class="navmenu">
+            <ul class="ListNone">
+              <li><a class="ListNone fs-4 active" href="#hero">Home</a></li>
+              <li><a class="ListNone fs-4" href="#about">About</a></li>
+              <li><a class="ListNone fs-4" href="#services">Services</a></li>
+              <!-- <li><a class="ListNone fs-4" href="#portfolio">Portfolio</a></li>
+              <li><a class="ListNone fs-4" href="#team">Team</a></li> -->
+              <li><a class="ListNone fs-4" href="#contactTop">Contact</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+
+          <a class="btn-getstarted" href="#about">Get started</a>
+        </div>
+      </header>
+
+      <div class="heroTop">
+        <section id="hero" class="hero section dark-background">
+          <div class="container hero-fade-in" data-aos-duration="1200">
+            <div class="row align-items-center">
+              <!-- Left Text Column -->
+              <div class="col-lg-6">
+                <div
+                  class="hero-content"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                  data-aos-duration="1000"
+                >
+                  <div class="hero-tag animate-float">
+                    <i class="bi bi-rocket-takeoff"></i>
+                    <span>Innovative Solutions</span>
+                  </div>
+                  <h1 data-aos="zoom-in" data-aos-delay="400">
+                    Achieving
+                    <span class="highlight">Outstanding Results</span> for Your
+                    Growth
+                  </h1>
+                  <p class="lead" data-aos="fade-left" data-aos-delay="500">
+                    Our dedicated team provides exceptional service to help you
+                    reach your business goals effectively.
+                  </p>
+                  <ul class="hero-features">
+                    <li data-aos="fade-up" data-aos-delay="600">
+                      <i class="bi bi-check-circle pulse"></i> Streamlined
+                      operational processes
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="700">
+                      <i class="bi bi-check-circle pulse"></i> Enhanced customer
+                      engagement strategies
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="800">
+                      <i class="bi bi-check-circle pulse"></i> Data-driven
+                      decision support
+                    </li>
+                  </ul>
+                  <div class="hero-cta" data-aos="fade-up" data-aos-delay="900">
+                    <a href="#services" class="btn btn-primary bounce"
+                      >Explore Our Services</a
+                    >
+                    <a
+                      href="tel:+1 (555) 987-6543"
+                      class="btn btn-link slide-in"
+                    >
+                      <i class="bi bi-telephone"></i> +1 (555) 987-6543
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Image Column -->
+              <div class="col-lg-6">
+                <div
+                  class="hero-image-wrapper"
+                  data-aos="zoom-in"
+                  data-aos-delay="500"
+                >
+                  <img
+                    src="image/grpimg.png"
+                    alt=""
+                    class="img-fluid hero-image wiggle"
+                  />
+                  <div class="stat-card top-right zoom-in-delay">
+                    <div class="stat-value">18.9K</div>
+                    <div class="stat-label">Improved market presence</div>
+                    <div class="stat-icon">
+                      <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+                  </div>
+                  <div
+                    class="stat-card bottom-left zoom-in-delay"
+                    style="animation-delay: 1.2s"
+                  >
+                    <div class="stat-value">+450%</div>
+                    <div class="stat-label">Increased lead generation</div>
+                    <div class="stat-icon">
+                      <i class="bi bi-graph-up"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div id="about" class="padT">
+        <section class="about mt-5 section">
+          <div
+            class="container"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1200"
+          >
+            <!-- Section Heading -->
+            <div class="row justify-content-center mb-5">
+              <div
+                class="col-lg-8 text-center"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <h2 class="section-heading">Our Vision &amp; Mission</h2>
+                <p class="lead">
+                  We're dedicated to transforming businesses through innovative
+                  solutions and strategic expertise that drive sustainable
+                  growth.
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature Boxes -->
+            <div class="row g-4 mb-5">
+              <div
+                class="col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="feature-box">
+                  <div class="icon-container">
+                    <i class="bi bi-lightbulb"></i>
+                  </div>
+                  <h4>Innovation</h4>
+                  <p>
+                    Pioneering solutions that challenge conventional thinking
+                    and create new opportunities for success.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="feature-box">
+                  <div class="icon-container">
+                    <i class="bi bi-graph-up-arrow"></i>
+                  </div>
+                  <h4>Growth</h4>
+                  <p>
+                    Facilitating sustainable expansion through strategic
+                    planning and calculated execution.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="feature-box">
+                  <div class="icon-container">
+                    <i class="bi bi-shield-check"></i>
+                  </div>
+                  <h4>Integrity</h4>
+                  <p>
+                    Upholding the highest standards of ethics, transparency and
+                    accountability in all our endeavors.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <div class="feature-box">
+                  <div class="icon-container">
+                    <i class="bi bi-people-fill"></i>
+                  </div>
+                  <h4>Collaboration</h4>
+                  <p>
+                    Working alongside our clients as partners to achieve mutual
+                    growth and shared success.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- About Content and Images -->
+            <div class="row align-items-center about-showcase">
+              <div
+                class="col-lg-6 order-lg-2"
+                data-aos="fade-left"
+                data-aos-delay="300"
+              >
+                <div class="about-image-grid">
+                  <img
+                    src="image/about-1.png"
+                    class="img-grid-main"
+                    alt="Our company vision"
+                  />
+                  <img
+                    src="image/about-2.png"
+                    class="img-grid-secondary"
+                    alt="Our team"
+                  />
+                  <img
+                    src="image/about-3.png"
+                    class="img-grid-tertiary"
+                    alt="Our workspace"
+                  />
+                  <div
+                    class="experience-badge"
+                    data-aos="zoom-in"
+                    data-aos-delay="500"
+                  >
+                    <span class="years">15+</span>
+                    <span class="text">Years of Excellence</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-6 order-lg-1"
+                data-aos="fade-right"
+                data-aos-delay="200"
+              >
+                <div class="about-content-box">
+                  <h3>Transforming Businesses Since 2008</h3>
+                  <p class="mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Proin gravida tortor in lectus pharetra, at iaculis orci
+                    scelerisque. Cras porta enim id neque interdum, at fermentum
+                    odio venenatis.
+                  </p>
+
+                  <div
+                    class="progress-item"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
+                    <div class="d-flex justify-content-between">
+                      <span class="progress-title">Strategic Planning</span>
+                      <span class="progress-percent">94%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" style="width: 94%"></div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="progress-item"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                  >
+                    <div class="d-flex justify-content-between">
+                      <span class="progress-title">Business Development</span>
+                      <span class="progress-percent">87%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" style="width: 87%"></div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="progress-item"
+                    data-aos="fade-up"
+                    data-aos-delay="600"
+                  >
+                    <div class="d-flex justify-content-between">
+                      <span class="progress-title">Market Research</span>
+                      <span class="progress-percent">92%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" style="width: 92%"></div>
+                    </div>
+                  </div>
+
+                  <a
+                    href="about.html"
+                    class="btn btn-discover mt-4"
+                    data-aos="zoom-in"
+                    data-aos-delay="700"
+                  >
+                    Learn More About Us
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section id="services" class="services section">
+        <div
+          class="container section-title"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
+          <h2>Services</h2>
+          <p>
+            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+            consectetur velit
+          </p>
+        </div>
+
+        <div
+          class="container aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="services-row">
+            <div class="row">
+              <div class="col-lg-4">
+                <div
+                  class="services-headline aos-init aos-animate"
+                  data-aos="fade-up"
+                >
+                  <p class="services-subtitle">Expert Guidance</p>
+                  <h2 class="services-title">
+                    Innovative Solutions We Provide
+                  </h2>
+                </div>
+
+                <div
+                  class="services-description aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <p>
+                    Our team delivers cutting-edge strategies to help you
+                    achieve your goals. Discover how our tailored services can
+                    benefit your business.
+                  </p>
+                </div>
+
+                <div
+                  class="services-image-container aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <div class="services-image">
+                    <img
+                      src="/image/services-1.png"
+                      alt="Services"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-8">
+                <div class="services-grid">
+                  <div class="row gy-4">
+                    <!-- Service Item 1 -->
+
+                    <div
+                      class="col-md-6"
+                      data-aos="zoom-in"
+                      data-aos-delay="100"
+                      data-aos-duration="800"
+                    >
+                      <div class="service-card">
+                        <div class="service-content text-center">
+                          <div class="service-icon">
+                            <i class="bi bi-cash-stack"></i>
+                          </div>
+                          <div class="service-info">
+                            <h3><a href="#">Strategic Planning</a></h3>
+                            <p>
+                              We offer customized plans to optimize your
+                              operations and improve overall efficiency across
+                              the board.
+                            </p>
+                            <div class="service-action">
+                              <a
+                                href="service-details.html"
+                                class="read-more-btn"
+                                >Details <i class="bi bi-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Service Item 2 -->
+
+                    <div
+                      class="col-md-6"
+                      data-aos="zoom-in"
+                      data-aos-delay="100"
+                      data-aos-duration="800"
+                    >
+                      <div class="service-card">
+                        <div class="service-content text-center">
+                          <div class="service-icon">
+                            <i class="bi bi-list-check"></i>
+                          </div>
+                          <div class="service-info">
+                            <h3><a href="#">Digital Marketing</a></h3>
+                            <p>
+                              Our expert team crafts engaging campaigns that
+                              connect with your audience and drive conversions
+                              effectively.
+                            </p>
+                            <div class="service-action">
+                              <a
+                                href="service-details.html"
+                                class="read-more-btn"
+                                >View More <i class="bi bi-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Service Item 3 -->
+
+                    <div
+                      class="col-md-6"
+                      data-aos="zoom-in"
+                      data-aos-delay="100"
+                      data-aos-duration="800"
+                    >
+                      <div class="service-card">
+                        <div class="service-content text-center">
+                          <div class="service-icon">
+                            <i class="bi bi-bar-chart"></i>
+                          </div>
+                          <div class="service-info">
+                            <h3><a href="#">Performance Analysis</a></h3>
+                            <p>
+                              We analyze your data to provide actionable
+                              insights, helping you make informed decisions for
+                              future growth.
+                            </p>
+                            <div class="service-action">
+                              <a
+                                href="service-details.html"
+                                class="read-more-btn"
+                                >Read More <i class="bi bi-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Service Item 4 -->
+
+                    <div
+                      class="col-md-6"
+                      data-aos="zoom-in"
+                      data-aos-delay="100"
+                      data-aos-duration="800"
+                    >
+                      <div class="service-card">
+                        <div class="service-content text-center">
+                          <div class="service-icon">
+                            <i class="bi bi-pie-chart"></i>
+                          </div>
+                          <div class="service-info">
+                            <h3><a href="#">Market Research</a></h3>
+                            <p>
+                              Understanding your market is key, and we provide
+                              comprehensive research to give you a competitive
+                              edge.
+                            </p>
+                            <div class="service-action">
+                              <a
+                                href="service-details.html"
+                                class="read-more-btn"
+                                >Learn More <i class="bi bi-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contactTop" class="cTop">
+        <section id="contact" class="contact section">
+          <!-- Section Title -->
+          <div
+            class="container section-title mt-5 aos-init aos-animate"
+            data-aos="fade-up"
+          >
+            <h2 class="mt-5">Contact</h2>
+            <p>
+              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+              consectetur velit
+            </p>
+          </div>
+          <!-- End Section Title -->
+
+          <div
+            class="container aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="contact-main-wrapper">
+              <div class="map-wrapper">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+
+              <div class="contact-content">
+                <div
+                  class="contact-cards-container aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div class="contact-card">
+                    <div class="icon-box">
+                      <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                      <h4>Location</h4>
+                      <p>8721 Broadway Avenue, New York, NY 10023</p>
+                    </div>
+                  </div>
+
+                  <div class="contact-card">
+                    <div class="icon-box">
+                      <i class="bi bi-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                      <h4>Email</h4>
+                      <p>info@examplecompany.com</p>
+                    </div>
+                  </div>
+
+                  <div class="contact-card">
+                    <div class="icon-box">
+                      <i class="bi bi-telephone"></i>
+                    </div>
+                    <div class="contact-text">
+                      <h4>Call</h4>
+                      <p>+1 (212) 555-7890</p>
+                    </div>
+                  </div>
+
+                  <div class="contact-card">
+                    <div class="icon-box">
+                      <i class="bi bi-clock"></i>
+                    </div>
+                    <div class="contact-text">
+                      <h4>Open Hours</h4>
+                      <p>Monday-Friday: 9AM - 6PM</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="contact-form-container aos-init aos-animate"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <h3>Get in Touch</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua consectetur adipiscing.
+                  </p>
+
+                  <form
+                    action="forms/contact.php"
+                    method="post"
+                    class="php-email-form"
+                  >
+                    <div class="row">
+                      <div class="col-md-6 form-group">
+                        <input
+                          type="text"
+                          name="name"
+                          class="form-control"
+                          id="name"
+                          placeholder="Your Name"
+                          required=""
+                        />
+                      </div>
+                      <div class="col-md-6 form-group mt-3 mt-md-0">
+                        <input
+                          type="email"
+                          class="form-control"
+                          name="email"
+                          id="email"
+                          placeholder="Your Email"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group mt-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="subject"
+                        id="subject"
+                        placeholder="Subject"
+                        required=""
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        rows="5"
+                        placeholder="Message"
+                        required=""
+                      ></textarea>
+                    </div>
+
+                    <div class="my-3">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">
+                        Your message has been sent. Thank you!
+                      </div>
+                    </div>
+
+                    <div class="form-submit">
+                      <button type="submit">Send Message</button>
+                      <div class="social-links">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <footer id="footer " class="footer mt-5 bg-dark text-light">
+        <div class="container footer-top">
+          <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-about">
+              <a
+                href="index.html"
+                class="logoF d-flex align-items-center mb-4 me-auto me-xl-0"
+              >
+                <img src="image/ES LOGO PNG[1].png" alt="Logo" />
+              </a>
+              <p>
+                Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
+                nada terra videa magna derita valies darta donna mare fermentum
+                iaculis eu non diam phasellus.
+              </p>
+              <div class="social-links d-flex mt-4">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Product Management</a></li>
+                <li><a href="#">Marketing</a></li>
+                <li><a href="#">Graphic Design</a></li>
+              </ul>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+            >
+              <h4>Contact Us</h4>
+              <p>A108 Adam Street</p>
+              <p>New York, NY 535022</p>
+              <p>United States</p>
+              <p class="mt-4">
+                <strong>Phone:</strong> <span>+1 5589 55488 55</span>
+              </p>
+              <p><strong>Email:</strong> <span>info@example.com</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+          <p>
+            © <span>Copyright</span>
+            <strong class="px-1 sitename">ES</strong>
+            <span>All Rights Reserved</span>
+          </p>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you've purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+            Designed by
+            <a href="https://www.kusheldigi.com/">Kushel Digi Solution</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true,
+      });
+    </script>
+  </body>
+</html>
